@@ -1,0 +1,11 @@
+command = 'var/www/html/dd_pay2/django_env/bin/gunicorn'
+pythonpath = 'var/www/html/dd_pay2/core'
+bind = '102.22.14.198:8000'
+workers = 3
+daemon=True
+#reload=True
+reload_engine="inotify"
+loglevel="debug"
+capture_output=True
+preload_app=True
+reuse_port=True

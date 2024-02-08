@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {%load static%}
+    
+    <link rel="stylesheet" href="{%static './css/style.css'%}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Data Solutions</title>
+    <link rel="icon" href="{static './images/DD.png'%}" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/f810b53124.js" crossorigin="anonymous"></script>
+
+    <meta name="description" content="Dynamic Data Solutions">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+   <!-- <meta name="keywords" content=""> -->        
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <meta name="MobileOptimized" content="width" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  
+</head>
+
+
+
+  <body>
+    <center>
+      <div class="hero">
+        <!-- </center> -->
+          <img src="{%static './images/DD.png'%}" alt="" class="imgcon" />
+        <!-- <center> -->
+            <!-- <h1>Select A Package</h1> -->
+
+        <form action="{% url 'index' %}" method="post" autocomplete="on">  
+          {% csrf_token %}    
+          <center>
+          {{form.as_div}}
+          </center>
+          <input class="submit" type="submit" value="Pay">
+        </form>
+      </div>
+  </center>
+
+
+<script src="{%static './js/script.js'%}"></script>
+  </body>
+</html>

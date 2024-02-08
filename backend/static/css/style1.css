@@ -1,0 +1,93 @@
+
+
+form{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+img{
+
+    display: flex;
+    margin: 5%;
+    width: 40%;
+    height: 40%; 
+    /*justify-content: center;
+    align-items: center;
+    text-align: center; */
+
+    /* max-width: 100%; */
+    /* height: auto;
+    display: flex;
+    margin: auto; */
+
+}
+
+body{
+    background-color: green;
+    justify-content: center;
+
+}
+
+
+.hero {
+    background-color: white;
+    height:60%;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px lightgreen;
+    margin: 100px;
+    padding: 60px;
+}
+
+input[type="submit"]{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(46, 218, 46);
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    /* box-shadow: 4px 4px 4px silver; */
+    color: white;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover{
+  
+        font-weight: bolder;
+        font-size: 15px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 30px;
+}
+
+label[for="id_Full_Name"]{
+    margin:auto;
+    position: relative;
+    right: 15%;
+}
+
+
+
+div input[id="id_show_custom_data_allocator"]{
+    position: relative;
+    left: 20%;
+    bottom: 20px;
+}
+
+
+div label[for="id_Amount"] , input[id="id_Amount"]{
+    position: relative;
+    right: 15%;
+}
+
+fieldset{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

@@ -1,0 +1,148 @@
+
+
+form{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom:10px;
+}
+
+img{
+
+    display: flex;
+    margin-bottom: 30px;
+    width: 35%;
+    height: 30%; 
+    /*justify-content: center;
+    align-items: center;
+    text-align: center; */
+
+    /* max-width: 100%; */
+    /* height: auto;
+    display: flex;
+    margin: auto; */
+
+}
+
+body{
+    background-color: green;
+    justify-content: center;
+
+}
+
+
+.hero {
+    background-color: white;
+    height:60%;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px lightgreen;
+    /* margin: 100px; */
+    margin: 5%;
+    padding: 60px;
+}
+
+input[type="submit"]{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(46, 218, 46);
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    /* box-shadow: 4px 4px 4px silver; */
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover{
+        font-weight: bolder;
+        font-size: 15px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 30px;
+}
+
+label[for="id_Full_Name"]{
+    margin:auto;
+    position: relative;
+    right: 15%;
+    font-size: 13px;
+    margin-top:5px;
+}
+
+label[for="id_Phone_Number"]{
+    font-size: 13px;
+    margin-top:5px;
+}
+
+div input[id="id_show_custom_data_allocator"]{
+    position: relative;
+    left: 27%;
+    bottom: 20px;
+}
+
+
+div label[for="id_Amount"] , input[id="id_Amount"]{
+    position: relative;
+    right: 15%;
+    margin-top:10px;
+}
+
+#id_Amount{
+margin-left:15px;
+}
+fieldset{
+    width:100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+legend{
+    font-size:14px;
+}
+
+#id_Data_Bundle{
+    width:100%;
+}
+
+label{
+   font-size:15px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 999px)     {
+    /* @media screen and (height:60%) and (width: 300px)and (margin: 5%) and (padding: 60px)   { */
+        .hero{
+            width: min-content;
+            height: min-content;
+        }
+
+        div input[id="id_show_custom_data_allocator"]{
+            position: relative;
+            left: 25%;
+            bottom: 20px;
+        }
+        
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 360px)     {
+        .hero{
+            width: auto;
+            height: auto;
+        }
+
+        div input[id="id_show_custom_data_allocator"]{
+            position: relative;
+            left: 40%;
+	    height:30px;
+            bottom: 20px;
+        }
+        
+}
